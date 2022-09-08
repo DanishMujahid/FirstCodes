@@ -1,0 +1,31 @@
+h1, body{
+    font-size: 20px;
+    text-align: center;
+    color: gold;
+  }
+  body{
+    background-color: purple;
+  }
+  .gender{
+    display: block;
+    margin: auto;
+  }
+  input{
+    min-width: 250px;
+    background-color: purple;
+    border-color: gold;
+    border: 5px 5px;
+    font-size: 14px;
+  }
+  body{
+    padding: 10px;
+    margin: auto;}
+  
+  select{
+    text-align: center;
+    min-width: 200px;
+  }
+  textarea{
+    min-width: 250px;
+    min-height: 80px;
+  }

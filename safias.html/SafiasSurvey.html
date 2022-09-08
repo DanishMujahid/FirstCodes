@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+<h1 id="title">Survey form</h1>
+<p id="description">Please fill out this survey with all relevant information:</p>
+<form id="survey-form">
+  <label id="name-label" for="name">Name</label>
+  <input id="name"
+         name="name"
+         type="text"
+         placeholder="enter your name here"
+         required>
+  <label id="email-label" for="email">Email</label>
+  <input id="email" name="email" type="email" placeholder="enter your email address" required>
+  <label id="number-label" for="number">Age</label>
+  <input id="number" type="number" min="10" max="99" placeholder="age" required>
+  <select id="dropdown" name="food">
+    <option value="">(Choose one)</option>
+    <option value="Smash burger">Smash burger</option>
+    <option value="loaded fries">Loaded fries</option>
+    <option value="any side">Any Side</option>
+    <option value="21oz tango ice blast">21oz Tango Ice Blast</option>
+  <option value="full american waffle">Full American Waffle</option>
+  <option value="half american waffle">Half American Waffle</option>
+  <option value="Crepe">Crepe</option>
+  <option value="4 hot Donuts">4 Hot Donuts</option>
+  <option value="Cookie dough">Cookie dough</option>
+  <option value="Milkshake">Milkshake</option>
+  <option value="sundae">Sundae</option>
+  <option value="knickerbocker">Knickerbocker</option>
+  <label><input name="gender" value="female" type="radio">Male</label>
+  <label><input name="gender" value="female" type="radio">Female</label>
+  <textarea placeholder="Please enter the menu item you would like to have if you have successfully been selected"></textarea>
+  <button id="submit">Submit</button>
+  </form>
+  <link rel="safias" href="Safias.css">
