@@ -227,6 +227,133 @@ ourStr2 += anAdjective;
 
 // "I am so cool!"
 
+// find length of string
+let firstNameLength = 0;
+let firstName1 = "Danish";
+
+firstNameLength = firstName.length;
+
+let lastNameLength = 0;
+let lastName1 = "Coding";
+
+lastNameLength = lastName.length;
+// '6'
+
+//Bracket notation to find first character in string
+let firstLetterOfFirstName = "";
+let firstName = "Sadia";
+
+firstLetterOfFirstName = firstName[0];
+// "S"
+
+let firstLetterOfFirstName1 = "";
+let firstName = "Danish";
+
+firstLetterOfFirstName2 = firstName[0];
+// "D"
+
+// String immmutability
+
+let myStr2 = "Jello, World";
+//myStr2[0] = "H" //Will result in error as letters cannot be changed however, the string can be reassigned completely.
+myStr2 = "Hello, World";
+
+// Bracket notation to find Nth Character in string
+let firstName3 = "Danish";
+let secondLetterOfFirstName = firstName3[2];
+// "n"
+
+let lastName3 = "Mujahid";
+let thirdLetterOfLastName3 = lastName3[2];
+//"j";
+
+//Bracket notation to find last character in string
+let myName = "Danish";
+let lastLetterOfMyName = myName[myName.length-1];
+//"h"
+
+//Bracket notation to find Nth - to - last character in string
+let thisName = "Danish";
+let thirdLetterOfThisName = thisName[thisName.length -3];
+// this works because (thisName.length = (0,1,2,3,4,5) D,A,N,I,S,H - 3 = D,A,N,'I')
+
+//Word blanks
+result += "My " + myAdjective + " " + myNoun + " " + myVerb + " to the store " + myAdverb + ".";
+//prints "My big dog ran to the store quickly"
+
+// Store multiple values in arrays
+// Arrays allow you to store several pieces of data in one place.
+let ourArray = ["John", 23];
+
+let myArray = [Danish, 23];
+
+//Nested array
+let thisArray = [["Danish", 23], ["Sadia", 16]];
+//This array has two elements inside the same array\
+
+//Access array data
+let numArray = [10, 20, 30];
+let myData = numArray[0];
+// '10'
+
+let numArray1 = [50, 60, 70];
+let myData2 = [1];
+// '60'
+
+//Modify Array data with indexes
+let thisArray1 = [18, 45, 99];
+thisArray1[1] = 27;
+// 45 is now 27. [18, 27, 99]
+
+let thisArray2= [82, 292, 849];
+thisArray2[2] = 38;
+// 849 is now 38. [82, 292, 38]
+
+//Access Multi-Dimensional Arrays with indexes
+let threeDArray = [[1, 2, 3], [4, 5, 6], [7, 8, 9],[[10, 11, 12], [13, 14, 15], 16, 17]];
+let myData3 = threeDArray[0][0];
+// first index array, first value of that array = '1'
+// [2][1] = '8'
+// How to access other array??
+
+// Manipulate Arrays with push()
+let myArray1 = ["Danish", 23];
+myArray1.push(["Happy", "Joy"]);
+// myArray1 now equals ["Danish", 23, ["Happy, "Joy"]],
+let myArray2 = [["Danish", 23], ["Faheem", 22]];
+myArray2.push(["Dog", "Lover"]);
+
+//Manipulate Arrays with pop()
+let popArray = [1, 2, 3];
+let removedFromPopArray = popArray.pop();
+//This removes '3' and now the array is [1, 2]
+
+let popArray1 = [[39, 42, 98], ["Danish", 23]];
+let removedFromPopArray1 = popArray1.pop();
+// Array is now [39, 42, 98]
+
+//Manipulate Arrays with Shift()
+let shiftArray = ["Danish", 23, "Handsome"];
+let removedFromShiftArray = shiftArray.shift();
+//This now equals [23, "Handsome"]
+let shiftArray1 = ["Sadia", 16, "Little shit"];
+let removedFromPopArray2 = shiftArray1.shift();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
