@@ -335,11 +335,376 @@ let removedFromPopArray1 = popArray1.pop();
 //Manipulate Arrays with Shift()
 let shiftArray = ["Danish", 23, "Handsome"];
 let removedFromShiftArray = shiftArray.shift();
-//This now equals [23, "Handsome"]
+//This now equals [23, "Handsome"] removes first element.
 let shiftArray1 = ["Sadia", 16, "Little shit"];
 let removedFromPopArray2 = shiftArray1.shift();
 
+//Manipulate arrays with unshift()
+let unShiftArray = ["Danish", 23, "Stupid"];
+unShiftArray.shift();
+unShiftArray.unshift("Faheem");
+// ["Faheem", 23, "Stupid"];
 
+let thisArray3 = ["Peter", "S", "Cummins"]
+thisArray3.shift();
+thisArray3.unshift("Tom");
+// ["Tom", "S", "Cummins"]
+
+let thisArray4 = [["Jacob", 23], ["Oliver", 23]];
+thisArray4.shift();
+thisArray4.unshift("Ashraf", 23);
+// [["Ashraf", 23], ["Oliver", 23]];
+
+//Shopping list
+let myShoppingList = [["Cereal", 3], ["Eggs", 6], ["Bread", 1], ["Chicken", 2]];
+//Created an array of arrays.
+
+//Write Reusable code with functions
+function ourReusable
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 
+//console.log("Hello world");
+
+let greeting1 = "Hello " + "Danish";
+console.log(greeting1);
+
+const dayOfTheWeek = "Tuesday";
+
+if (true) {
+console.log("Condition 1 is true")
+}
+
+if (false) {
+console.log("Condition 2 is true")
+}
+
+console.log("Hello" === "Hello")
+
+console.log(10 < 20);
+
+console.log(1 + 1 !== 2);
+
+if (5 > 2) {
+console.log("Condition is true")
+}
+
+console.log(1 === "1");
+
+console.log(1 == "1");
+
+const isSleepy = false;
+const time = 2000;
+const isBedTime = time >= 2100;
+
+if (isSleepy) {
+console.log("Let's sleep now because I'm sleepy")
+} else if (isBedTime) {
+console.log("Let's sleep now because it's bedtime")
+} else {
+console.log("Let's sleep later")
+}
+
+//if (isSleepy) = true;
+//const time = 2200
+//const isBedtime = time >= 2100
+
+//if (isSleepy && isBedTime) {
+//console.log(Let's sleep now)
+//} else 
+//console.log(Let's sleep later)
+
+//
+
+const dogNames = ['Max', 'Fido', 'Mutley'];
+//console.log(dogNames[0]);
+//console.log(dogNames.length)
+
+//dogNames.push('Kev')
+//console.log(dogNames.length)
+
+//console.log(dogNames);
+
+dogNames.shift()
+console.log(dogNames)
+
+const nestedLetters = [
+['a', 'b', 'c'],
+['d,', 'e', 'f'],
+];
+
+//console.log(nestedLetters.length)
+
+const firstLetters = nestedLetters[0];
+const secondLetters = nestedLetters[1];
+console.log(nestedLetters[1]);
+console.log(nestedLetters[0][0]);
+
+console.log(firstLetters[0])
+
+//Iternation
+//repetition of a particular task
+//performed on a different value each time
+//used when we want to perform certain tasks
+
+//console.log("Doing task number 1")
+//console.log("Doing task number 2");
+
+
+//for (let task = 1; task <= 5; task += 1) {
+//console.log('Doing task number ' + task)
+//}
+
+let dogNames1 = ["Obi", "Penny", "Mac", "Misty"]
+
+for (let i = 0; i < dogNames1.length; i++) {
+console.log(dogNames1[i])
+}
+
+
+const toyStoryData = {
+director : 'John Lassester',
+releaseYear: 1995,
+boxOfficeInGdp: 272886800,
+starring: ['Tom Hanks', 'Tim Allen', 'Don Rickles'],
+runtimeInMinutes: 81,
+};
+
+console.log(toyStoryData)
+
+console.log(toyStoryData.director)
+
+//store a variable and dynamically access a property
+
+const searchTerm = 'starring'
+
+console.log(toyStoryData[searchTerm]);
+
+//access a nested property
+
+//const stars = toyStoryData.starring;
+//console.log(toyStoryData.starring[0]);
+
+//mutate an object
+
+//toyStoryData.director = 'kev';
+
+//console.log(toyStoryData)
+
+//iterate through an object
+ //for (let key in toyStoryData) {
+ //console.log(toyStoryData[key]);
+ //}
+
+//functions
+
+//const name1 = "Kev";
+//const name2 = "Doug";
+
+//const greeting1 = "Hello " + name1 + "!";
+//const greeting2 = "Hello " + name2 + "!";
+
+//console.log(greeting1)
+//console.log(greeting2)
+
+//function createGreeting(name, greeting) {
+//const greeting = "Hello " + name + "!";
+//console.log(greeting)
+//return greeting
+
+//createGreeting(name1)
+//createGreeting(name2)
+
+//createGreeting(name1, name2) //will not work as javascript only executes one line of code at a time
+
+//const greeting2 = createGreeting(name1)
+//const greeting3 = createGreeting(name2)
+
+//console.log(greeting1)
+
+// Log to console
+console.log('Hello console')
+
+function ourReusableFunction() {
+  console.log("Heyya, World");
+}
+
+ourReusableFunction();
+
+function reusableFunction() {
+  console.log("Hi, World");
+}
+
+reusableFunction();
+
+//Passing values to functions with arguments
+function ourFunctionWithArgs(a, b) {
+  console.log(a+b);
+}
+ourFunctionWithArgs(10, 5);
+
+function ourFunctionWithArgs2 (c, d) {
+  console.log(c-d);
+}
+ourFunctionWithArgs2(100, 56);
+
+//Global scope
+
+var myGlobal = 10;
+
+function fun1() {
+  oopsGlobal = 5
+}
+
+function fun2() {
+  var output = "";
+  if(typeof myGlobal != "undefined") {
+    output += "myGlobal: " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal: " + oopsGlobal;
+   }
+   console.log(output);
+}
+fun1();
+fun2();
+
+
+//Local scope
+function myLocalScope() {
+    var myVar = 5;
+    console.log(myVar);
+  }
+  myLocalScope();
+  
+  //Global v local scope in functions
+  //local takes precident over global
+   var outerWear = "T-Shirt";
+   
+   function myOutfit() {
+       var outerWear = "Sweater";
+       
+       return outerWear;
+   }
+   
+   console.log(myOutfit());
+   console.log(outerWear);
+   
+   //Return a value from a function with return
+   function plus10(num) {
+       return num + 10;
+   }
+   console.log(plus10(100));
+   
+   function minus10(num){
+       return num - 10;
+   }
+   console.log(minus10(100));
+   
+   function times10(num){
+       return num * 10;
+   }
+   console.log(times10(100));
+   
+   //undefined value returned
+   /*var sum = 5
+   function addFive() {
+       sum = sum + 5;
+   }
+   console.log(addFive())*/
+   
+   //Assignment with return value
+   var changed = 0;
+   function change(num) {
+       return (num + 5) /3;
+   }
+   
+   changed = change(10);
+   
+   console.log(changed)
+   
+   var processed = 0;
+   
+   function processArg(num) {
+       return (num+3) / 5
+   }
+   
+   processed = processArg(7);
+   
+   console.log(processed)
+   
+   //stand in line
+   function nextInLine(arr, item) {
+       item = 6
+       arr.push();
+       return arr.shift();
+   }
+   
+   var testArr = [1,2,3,4,5];
+   
+   console.log("Before: " + JSON.stringify(testArr));
+   console.log(nextInLine(testArr, 6));
+   console.log("After: " + JSON.stringify(testArr))
+   
+   //Boolean Values
+   function welcomeToBooleans() {
+       return false;
+   }
+   
+   //Use Conditional Logic with if statements
+   function ourTrueOrFalse(isItTrue) {
+       if (isItTrue) {
+           return "Yes, it is true";
+       }
+       return "No, it is false";
+       }
+       
+  function trueOrFalse(wasThatTrue) {
+      if(wasThatTrue) {
+          return "Yes, that was true.";
+      }
+      return "No, that was false.";
+  }
+  
+  console.log(trueOrFalse(true));
+  
+  //Comparison with the equality operator
+  function testEqual(val) {
+      if (val == 10) {
+          return "Equal";
+      }
+      return "Not Equal";
+  }
+  console.log(testEqual(10));
+  
+  //Comparison with the Strict Equality Operator
+  function testStrict(val) {
+      if (val === 3) {
+          return "Equal";
+      }
+      return "Not Equal";
+  }
+  
+  console.log(testStrict(3));
 
 
 
