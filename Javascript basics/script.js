@@ -1092,8 +1092,17 @@ function switchOfStuff(val) {
   
   const entreeValue = testObj["an entree"];   
   const drinkValue = testObj["the drink"];*/
+//Accessing object properties with variables
 
+const testObj = {
+    12: "Namath",
+    16: "Montana",
+    19: "Unitas"
+  };
   
+  
+  const playerNumber = 16; 
+  const player = testObj[playerNumber];
   
 
 
