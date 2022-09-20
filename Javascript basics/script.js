@@ -359,33 +359,12 @@ thisArray4.unshift("Ashraf", 23);
 let myShoppingList = [["Cereal", 3], ["Eggs", 6], ["Bread", 1], ["Chicken", 2]];
 //Created an array of arrays.
 
-//Write Reusable code with functions
-function ourReusable
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//Write Reusable code with function
 
 // 
 //console.log("Hello world");
 
-let greeting1 = "Hello " + "Danish";
+const greeting1 = "Hello " + "Danish";
 console.log(greeting1);
 
 const dayOfTheWeek = "Tuesday";
@@ -705,6 +684,417 @@ function myLocalScope() {
   }
   
   console.log(testStrict(3));
+
+  //Comparison with the equality operator
+function testEqual(val) {
+    if (val == 10) {
+        return "Equal";
+    }
+    return "Not Equal";
+}
+console.log(testEqual(10));
+
+//Comparison with the Strict Equality Operator
+function testStrict(val) {
+    if (val === 3) {
+        return "Equal";
+    }
+    return "Not Equal";
+}
+
+console.log(testStrict(3));
+
+//
+function compareEquality(a, b) {
+  if (a === b) { 
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+console.log(compareEquality(10, "10"));
+
+//Comparison with the inequality operator
+
+function testNotEqual(val) {
+  if (val != 99) { // 
+    return "Not Equal";
+  }
+  return "Equal";
+}
+
+console.log(testNotEqual(10));
+
+//comparison with the strict inequality operator
+function testStrictNotEqual(val) {
+  if (val !== 17) { 
+    return "Not Equal";
+  }
+  return "Equal";
+}
+
+testStrictNotEqual(10);
+
+//comparison with the greater than operator
+function testGreaterThan(val) {
+  if (val > 100) {  
+    return "Over 100";
+  }
+
+  if (val > 10) {  
+    return "Over 10";
+  }
+
+  return "10 or Under";
+}
+
+console.log(testGreaterThan(10));
+
+//comparison with equal to or greater than
+function testGreaterOrEqual(val) {
+  if (val >= 20) {  
+    return "20 or Over";
+  }
+
+  if (val >= 10) {  
+    return "10 or Over";
+  }
+
+  return "Less than 10";
+}
+
+testGreaterOrEqual(10);
+//less than operator
+function testLessThan(val) {
+  if (val < 25) {  
+    return "Under 25";
+  }
+
+  if (val < 55) {  
+    return "Under 55";
+  }
+
+  return "55 or Over";
+}
+
+testLessThan(10);
+//less than or equal
+function testLessOrEqual(val) {
+  if (val <= 12) {  
+    return "Smaller Than or Equal to 12";
+  }
+
+  if (val <= 24) {  
+    return "Smaller Than or Equal to 24";
+  }
+
+  return "More Than 24";
+}
+
+testLessOrEqual(10);
+//logical and operator
+function testLogicalAnd(val) {
+  
+
+  if (val >= 25 && val <= 50) {
+      return "Yes";
+    }
+  return "No";}
+
+console.log(testLogicalAnd(10));
+
+// and or operators
+function testLogicalOr(val) {
+
+  if (val < 10 || val > 20 ) {
+    return "Outside";
+  }
+  return "Inside";
+}
+
+console.log(testLogicalOr(15));
+
+//else statements
+function testElse(val) {
+  let result = "";
+
+  if (val > 5) {
+    result = "Bigger than 5";
+  }
+  else {
+    result = "5 or Smaller";
+  }
+
+  return result;
+}
+
+console.log(testElse(4));
+
+//else if
+function testElseIf(val) {
+  if (val > 10) {
+    return "Greater than 10";
+  }
+
+  else if (val < 5) {
+    return "Smaller than 5";
+   } 
+   else
+  return "Between 5 and 10";
+}
+
+console.log(testElseIf(7));
+
+//logical order in if else statements
+function orderMyLogic(val) {
+  if (val < 5) {
+    return "Less than 5";
+  } else if (val < 10) {
+    return "Less than 10";
+  } else {
+    return "Greater than or equal to 10";
+  }
+}
+console.log(orderMyLogic(8));
+
+//chaining if else statements
+function testSize(num) {
+  if (num < 5) {
+    return "Tiny"
+  } else if (num < 10) {
+    return "Small"
+  } else if (num < 15) {
+    return "Medium" 
+  } else if (num < 20) {
+    return "Large"
+  } else (num >= 20) 
+    return "Huge"
+}
+
+  
+console.log(testSize(19));
+//golf
+const names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
+
+function golfScore(par, strokes) {
+  if (strokes == 1) {
+    return names[0]
+  } else if (strokes <= par - 2){
+    return names[1]
+  } else if (strokes == par -1){
+    return names[2]
+  } else if (strokes == par){
+    return names[3]
+  } else if (strokes == par + 1){
+    return names[4]
+  } else if (strokes == par + 2){
+    return names[5]
+  } else if (strokes == par + 3)
+    return names[6]
+}
+console.log(golfScore(5, 9));
+//Switch statements
+function caseInSwitch(val) {
+  let answer = "";
+  switch(val) {
+    case 1:
+    answer = ("alpha");
+    break
+    case 2:
+    answer = ("beta");
+    break
+    case 3:
+    answer = ("gamma");
+    break
+    case 4:
+    answer = ("delta")
+  }
+  return answer;
+}
+
+console.log(caseInSwitch(1));
+
+//Adding a default option in switch statements
+function switchOfStuff(val) {
+    let answer = "";
+    switch(val) {
+      case 'a':
+      return 'apple'
+      break
+      case 'b':
+      return 'bird'
+      break
+      case 'c':
+      return 'cat'
+      break
+      default:
+      return 'stuff'
+    }
+    return answer;
+  }
+  
+  switchOfStuff(1);
+  
+  //multiple identical options in switch statements
+  function sequentialSizes(val) {
+    let answer = "";
+    switch(val) {
+    case 1:
+    case 2:
+    case 3:
+    answer = "Low"
+    break;
+    case 4:
+    case 5:
+    case 6:
+    answer = "Mid"
+    break;
+    case 7:
+    case 8:
+    case 9:
+    answer = "High"
+    }
+  
+    return answer;
+  }
+  
+  console.log(sequentialSizes(8));
+  
+  //replacing if else chains with switch
+  function chainToSwitch(val) {
+    let answer = "";
+    if (val === "bob") {
+      answer = "Marley";
+    } else if (val === 42) {
+      answer = "The Answer";
+    } else if (val === 1) {
+      answer = "There is no #1";
+    } else if (val === 99) {
+      answer = "Missed me by this much!";
+    } else if (val === 7) {
+      answer = "Ate Nine";
+    }
+  
+    return answer;
+    console.log(chainToSwitch(7));
+  }
+  // AFTER /
+  function chainToSwitch(val) {
+    let answer = "";
+  switch(val) {
+      case "bob":
+      answer = "Marley"
+      break;
+      case 42:
+      answer = "The Answer"
+      break
+      case 1:
+      answer ="There is no #1"
+      break
+      case 99:
+      answer = "Missed me by this much!";
+      break
+      case 7: 
+      answer = "Ate Nine"
+    }
+    return answer;
+  }
+  
+  console.log(chainToSwitch(42));
+  
+  //Returning boolean values from functions
+  function isLess(a, b) {
+    if (a < b) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  
+  console.log(isLess(10, 15));
+  
+  //AFTER
+  
+  function isLess(a, b) {
+   return a < b
+  }
+  
+  console.log(isLess(10, 15));
+  
+  //return early pattern for functions
+  function abTest(a, b) {
+  
+    if (a < 0 || b < 0)
+    return undefined
+  
+    return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
+  }
+  
+  console.log(abTest(2,2));
+  
+  //counting cards
+  let count = 0;
+  
+  function cc(card) {
+  
+    switch(card) {
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+      count++;
+      break;
+    case 10:
+    case 'J':
+    case 'Q':
+    case 'K':
+    case 'A':
+      count--;
+      break;
+    }
+    let holdbet = 'Hold'
+    if (count > 0) {
+      holdbet = 'Bet';
+    }
+  return count + " " + holdbet
+  }
+  
+  console.log(cc(2)); 
+  cc(3); cc(7); cc('K'); cc('A');
+  
+  //Building Javascript objects
+  const myDog = {
+  
+    "name" : "Faheem",
+    "legs" : 4,
+    "tails" : 1,
+    "friends" : ["Water", "cats"]
+  };
+  
+  //accessing object properties with dot notation
+  
+  /*const testObj = {
+    "hat": "ballcap",
+    "shirt": "jersey",
+    "shoes": "cleats"
+  };
+  
+  const hatValue = testObj.hat;      
+  const shirtValue = testObj.shirt; 
+  
+  //bracket notations
+  const testObj = {
+    "an entree": "hamburger",
+    "my side": "veggies",
+    "the drink": "water"
+  };
+  
+  const entreeValue = testObj["an entree"];   
+  const drinkValue = testObj["the drink"];*/
+
+  
+  
 
 
 
