@@ -1103,6 +1103,154 @@ const testObj = {
   
   const playerNumber = 16; 
   const player = testObj[playerNumber];
+
+  //Accessing object properties with variables
+
+const testObj = {
+    12: "Namath",
+    16: "Montana",
+    19: "Unitas"
+  };
+  
+  
+  const playerNumber = 16; 
+  const player = testObj[playerNumber];
+  
+  //updating object properties
+  const myDog = {
+    "name": "Coder",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["Campers"]
+  };
+  
+  myDog.name = "Happy Camper"
+  myDog["name"] = "Happy Camper"
+  
+  //add new properties to an object
+  const myDog1 = {
+    "name": "Happy Coder",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["Campers"]
+  };
+  
+  myDog1.bark = "Bow-wow";
+  
+  //Delete properties from object
+  
+  //delete myDog2.bark;
+  
+  const myDog2 = {
+    "name": "Happy Coder",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["freeCodeCamp Campers"],
+    "bark": "woof"
+  };
+  delete myDog2.tails
+  
+  //using objects for lookups
+  function phoneticLookup(val) {
+    let result = "";
+  
+    let lookup = {
+      "alpha" : "Adams",
+      "bravo" : "Boston",
+      "charlie" : "Chicago",
+      "delta" : "Denver",
+      "echo" : "Easy",
+      "foxtrot" : "Frank"
+    };
+    result = lookup[val]
+  
+    return result;
+  }
+  
+  console.log(phoneticLookup("charlie"));
+  
+  //Testing objects for properties
+  function checkObj(obj, checkProp) {
+   if (obj.hasOwnProperty(checkProp)) {
+    return obj[checkProp];
+  } else {
+    return "Not Found"
+  }
+  }
+  
+  //Manipulating complex objects
+  const myMusic = [
+    {
+      "artist": "Billy Joel",
+      "title": "Piano Man",
+      "release_year": 1973,
+      "formats": [
+        "CD",
+        "8T",
+        "LP"
+      ],
+      "gold": true
+    },
+    {
+      "artist" : "Micheal Jackson",
+      "title" : "Thriller",
+      "release_year" : 1990,
+      "formats" : [
+        "CD",
+        "Casette",
+        "Vinyl"
+      ]
+    }
+  ];
+  
+  //Accessing nested objects
+  const myStorage = {
+    "car": {
+      "inside": {
+        "glove box": "maps",
+        "passenger seat": "crumbs"
+       },
+      "outside": {
+        "trunk": "jack"
+      }
+    }
+  };
+  
+  const gloveBoxContents = myStorage.car.inside["glove box"];
+  
+  const myPlants = [
+    {
+      type: "flowers",
+      list: [
+        "rose",
+        "tulip",
+        "dandelion"
+      ]
+    },
+    {
+      type: "trees",
+      list: [
+        "fir",
+        "pine",
+        "birch"
+      ]
+    }
+  ];
+  
+  const secondTree = myPlants[1].list[1];
+  
+  console.log(secondTree)
+  
+  //iterate with javascript for loops
+  const myArray = [];
+  
+  
+  for (let i = 1; i <= 5; i++) {
+    myArray.push(i)
+  }
+  
+  console.log(myArray)
+  
   
 
 
