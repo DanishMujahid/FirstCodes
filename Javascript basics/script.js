@@ -1250,6 +1250,50 @@ const testObj = {
   }
   
   console.log(myArray)
+
+  const mystery1 = true && true;
+console.log(mystery1);
+//true
+
+const mystery2 = false && true;
+console.log(mystery2);
+//false 
+const mystery3 = true && false;
+console.log(mystery3);
+//false
+const mystery4 = false && false;
+console.log(mystery4);
+//false
+const mystery5 = true || true;
+console.log(mystery5);
+//true
+const mystery6 = false || true;
+console.log(mystery6);
+//true
+const mystery7 = true || false;
+console.log(mystery7);
+//true
+const mystery8 = false || false;
+console.log(mystery8);
+//false
+const mystery9 = !false;
+console.log(mystery9);
+//true
+const mystery10 = !true;
+console.log(mystery10);
+//false
+const mystery11 = false || true || false;
+console.log(mystery11);
+//true
+const mystery12 = true && false || true;
+console.log(mystery12);
+//true
+const mystery13 = true && true && !true;
+console.log(mystery13);
+//flase
+const mystery14 = true || !false && false;
+console.log(mystery14);
+//true
   
   
 
