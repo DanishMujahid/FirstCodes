@@ -1294,6 +1294,26 @@ console.log(mystery13);
 const mystery14 = true || !false && false;
 console.log(mystery14);
 //true
+
+myAge = 1
+humanDogRatio = 7
+
+let myDogAge = myAge * humanDogRatio
+
+console.log(myDogAge)
+
+let bonusPoints = 50
+console.log(bonusPoints)
+
+bonusPoints = bonusPoints + 50
+console.log(bonusPoints)
+
+bonusPoints = bonusPoints - 75
+console.log(bonusPoints)
+
+bonusPoints = bonusPoints + 45
+console.log(bonusPoints)
+
   
   
 
